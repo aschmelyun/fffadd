@@ -30,12 +30,14 @@
     <?php else:?>
         <div id="palette">
             <?php foreach($colors as $color): ?>
-                <div class="color" style="background:#<?php echo $color;?>" data-color="<?php echo $color;?>">
-                    <span>
-                        <em><?php echo '#' . $color;?></em>
-                        <i>Copied</i>
-                    </span>
-                </div>
+                <?php if( ctype_xdigit($color) && (strlen($color) == 3 || strlen($color) == 6) ): ?>
+                    <div class="color" style="background:#<?php echo $color;?>" data-color="<?php echo $color;?>">
+                        <span>
+                            <em><?php echo '#' . $color;?></em>
+                            <i>Copied</i>
+                        </span>
+                    </div>
+                <?php endif; ?>
             <?php endforeach; ?>
         </div>
     <?php endif;?>
