@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: arial, sans-serif;
+    font-size: 100%;
 }
 body.palette-empty {
     background: #fffadd;
@@ -39,4 +40,27 @@ body.palette-empty {
 }
 .color span i {
     top: 64px;
+}
+#credits {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    bottom: 12px;
+    right: 16px;
+}
+#credits span {
+    font-size: 0.85em;
+    color: #333;
+    background: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    opacity: 0.5;
+    border-radius: 14px;
+}
+#credits span:hover {
+    opacity: 0.85;
+}
+#credits span a {
+    color: #333;
+    font-weight: bold;
 }

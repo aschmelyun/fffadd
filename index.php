@@ -41,6 +41,9 @@
             <?php endforeach; ?>
         </div>
     <?php endif;?>
+    <div id="credits">
+        <span>Made in a coffee-fueled afternoon by <a href="http://aschmelyun.com" target="_blank">aschmelyun</a></span>
+    </div>
     <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 </html>
