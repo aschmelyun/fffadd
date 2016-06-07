@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+.color {
+    width: 100%;
+    text-align: center;
+    padding: 48px 0;
+}
+.color span {
+    display: inline-block;
+    background: #fff;
+    padding: 8px 16px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    opacity: 0.85;
+    overflow: hidden;
+    height: 18px;
+}
+.color:hover {
+    cursor: pointer;
+}
+.color:hover span {
+    opacity: 1.0;
+    position: relative;
+}
+.color span em,
+.color span i {
+    font-style: normal;
+    display: block;
+    position: relative;
+}
+.color span i {
+    top: 64px;
+}
