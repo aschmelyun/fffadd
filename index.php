@@ -11,6 +11,7 @@
 <head>
     <title>Palette</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <script type="text/javascript" src="/assets/js/jquery-1.11.3.min.js"></script>
 </head>
 <body>

@@ -6,7 +6,8 @@ var Palette = {
 
     handleClick: function() {
         var palette = this;
-        $('.color').click(function() {
+        $('.color').click(function(e) {
+            e.preventDefault();
             if( palette.copyToClipboard($(this).data('color')) ) {
                 palette.showCopiedText($(this));
             }
