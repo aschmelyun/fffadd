@@ -7,7 +7,6 @@ var Palette = {
     handleClick: function() {
         var palette = this;
         $('.color').click(function(e) {
-            e.preventDefault();
             if( palette.copyToClipboard($(this).data('color')) ) {
                 palette.showCopiedText($(this));
             }
@@ -33,7 +32,9 @@ var Palette = {
 
         // select the content
         var currentFocus = document.activeElement;
+        var currentX = window.scrollX, currentY = window.scrollY;
         target.focus();
+        window.scrollTo(currentX, currentY);
         target.setSelectionRange(0, target.value.length);
         
         // copy the selection
